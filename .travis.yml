@@ -1,0 +1,8 @@
+language: node_js
+sudo: false
+node_js: 8.4.0
+install: npm install
+jobs:
+  include:
+    - stage: unit, integration and snapshot testing
+      script: npm test

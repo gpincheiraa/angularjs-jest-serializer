@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "An AngularJS serializer for rendering html component templates for snapshot testing",
   "main": "angularjs-serializer.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpincheiraa/angularjs-jest-serializer"
+  },
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "tdd": "jest --watch"
   },
   "keywords": [
