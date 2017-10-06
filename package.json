@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-snapshot-serializer",
+  "name": "angularjs-jest-serializer",
   "version": "0.1.0",
   "description": "An AngularJS serializer for rendering html component templates for snapshot testing",
   "main": "angularjs-serializer.js",
