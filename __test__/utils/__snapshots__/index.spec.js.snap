@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should remove the comment elements in a given NodeList 1`] = `
+"
+        
+        <div> <a> Remove the comments please\\" </a> </div>
+    "
+`;

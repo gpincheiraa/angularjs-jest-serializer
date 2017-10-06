@@ -1,7 +1,10 @@
-import "angular";
-import "angular-mocks";
+import angular from "angular";
 import { domAttributesList } from "./domAttributesList"
 import { removeHTMLComments } from "./utils"
+
+const angularInjector = angular.injector(["ng"]);
+const $compile = angularInjector.get("$compile");
+const $rootScope = angularInjector.get("$rootScope");
 
 const HTMLNormalizer = (element) => {
     const allChildrenElements = element[0].getElementsByTagName("*");
@@ -17,15 +20,14 @@ const HTMLNormalizer = (element) => {
 }
 
 export const angularjsSnapshotFormat = ({ template, $ctrl }) => {
-    let el;
-    inject(($compile, $rootScope) => {
-        const scope = $rootScope.$new();
-        scope.$ctrl = $ctrl;
-        el = $compile(template)(scope);
-        scope.$digest();
+    const scope = $rootScope.$new();
+    scope.$ctrl = $ctrl;
 
-        removeHTMLComments(el[0].childNodes);
-        el = HTMLNormalizer(el);
-    });
+    let el = $compile(template)(scope);
+    scope.$digest();
+
+    removeHTMLComments(el[0].childNodes);
+    el = HTMLNormalizer(el);
+
     return el.outerHTML;
 }

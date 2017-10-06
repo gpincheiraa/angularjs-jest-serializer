@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not replace the directives attributes that doesn't have an angular expression 1`] = `
+"<div ui-view=\\"\\" class=\\"ng-scope\\">
+                <div class=\\"well well-sm ng-pristine ng-untouched ng-valid ng-empty\\" uib-datepicker=\\"\\" ng-model=\\"[ngExpression]\\" datepicker-options=\\"[ngExpression]\\"></div>
+            </div>"
+`;
+
+exports[`should render a template that doesn't contains AngularJS directives 1`] = `"<a class=\\"ng-scope\\">Serialize me!</a>"`;
+
+exports[`should replace the angular expressions on directives 1`] = `
+"<div class=\\"ng-binding ng-scope\\">
+                <input ng-model=\\"[ngExpression]\\" class=\\"ng-pristine ng-untouched ng-valid ng-not-empty\\"> Hello AngularJS Serializer!
+            </div>"
+`;
