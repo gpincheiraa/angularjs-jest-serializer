@@ -22,7 +22,6 @@
     "jest": "^21.2.1"
   },
   "dependencies": {
-    "angular": "^1.6.6",
-    "angular-mocks": "^1.6.6"
+    "angular": "^1.6.6"
   }
 }
