@@ -1,4 +1,4 @@
-var { angularjsSnapshotFormat } = require("../angularjsSnapshotFormat");
+var { angularjsSnapshotFormat } = require("../src/angularjsSnapshotFormat");
 
 test("should render a template that doesn't contains AngularJS directives", () => {
     const componentDefinition = {

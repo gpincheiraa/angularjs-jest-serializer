@@ -1,4 +1,4 @@
-import { removeHTMLComments } from "../../utils";
+import { removeHTMLComments } from "../src/utils";
 
 test("Should remove the comment elements in a given NodeList", () => {
 

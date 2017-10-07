@@ -8,10 +8,10 @@ const wrongWrapper = { template: "" };
 
 test("should use angularjsSnapshotFormat for print the snapshot output", () => {
     const spy = jest.fn();
-    const mock = jest.mock("../angularjsSnapshotFormat", (cb) => ({
+    const mock = jest.mock("../src/angularjsSnapshotFormat", (cb) => ({
         angularjsSnapshotFormat: spy
     }));
-    const { print } = require("../angularjs-serializer");
+    const { print } = require("../src/angularjs-serializer");
 
     print(defaultWrapper);
 
@@ -19,7 +19,7 @@ test("should use angularjsSnapshotFormat for print the snapshot output", () => {
 });
 
 test("should test if the passed wrapper have the desired object definition", () => {
-    const { test } = require("../angularjs-serializer");
+    const { test } = require("../src/angularjs-serializer");
 
     expect(test(defaultWrapper)).toBe(true);
     expect(test(wrongWrapper)).toBe(false);
