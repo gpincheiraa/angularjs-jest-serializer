@@ -2,20 +2,25 @@
   "name": "angularjs-jest-serializer",
   "version": "0.1.3",
   "description": "An AngularJS serializer for rendering html component templates for snapshot testing",
-  "main": "compiled/angularjs-serializer.js",
+  "main": "angularjs-serializer.js",
+  "bugs": {
+    "url": "https://github.com/gpincheiraa/angularjs-jest-serializer/issues",
+    "email": "g.pincheira.a@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gpincheiraa/angularjs-jest-serializer"
   },
   "scripts": {
-    "build": "babel ./src -d ./compiled",
+    "build": "babel src -d ./",
     "test": "jest --coverage",
     "tdd": "jest --watch"
   },
   "keywords": [
     "jest"
   ],
-  "author": "Gonzalo Pincheira",
+  "author": "Gonzalo Pincheira <g.pincheira.a@gmail.com>",
+  "homepage": "https://github.com/gpincheiraa/angularjs-jest-serializer#readme",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",

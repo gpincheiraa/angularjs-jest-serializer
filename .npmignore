@@ -1,0 +1,9 @@
+compiled
+__test__
+coverage
+node_modules
+src
+.travis.yml
+.babelrc
+.gitignore
+CHANGELOG.md
