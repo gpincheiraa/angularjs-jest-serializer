@@ -9,7 +9,7 @@ snapshots for testing.
 
 #### Install it
 ```
-npm install --save-dev  github:gpincheiraa/angularjs-jest-serializer
+npm install --save-dev angularjs-jest-serializer
 ```
 
 #### Add it to your jest config
