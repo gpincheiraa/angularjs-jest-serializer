@@ -1,6 +1,6 @@
 {
   "name": "angularjs-jest-serializer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An AngularJS serializer for rendering html component templates for snapshot testing",
   "main": "compiled/angularjs-serializer.js",
   "repository": {
