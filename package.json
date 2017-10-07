@@ -14,7 +14,8 @@
   "scripts": {
     "build": "babel src -d ./",
     "test": "jest --coverage",
-    "tdd": "jest --watch"
+    "tdd": "jest --watch",
+    "prepublishOnly": "npm run build",
   },
   "keywords": [
     "jest"
