@@ -3,18 +3,12 @@ cache:
   directories:
     - node_modules
 notifications:
-  email: false
+  email: true
 node_js:
   - '7'
   - '6'
   - '4'
-before_script:
-  - npm prune
-after_success:
-  - npm run semantic-release
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  - '8'
 install: npm install
 jobs:
   include:
