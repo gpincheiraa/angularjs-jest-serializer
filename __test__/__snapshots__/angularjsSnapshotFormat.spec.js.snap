@@ -6,6 +6,17 @@ exports[`should not replace the directives attributes that doesn't have an angul
             </div>"
 `;
 
+exports[`should overwrite the FormController instance created by angularJS $compile
+    function if the component definition set the given variable in the form name attribute 1`] = `
+"<form name=\\"$ctrl.formName\\" class=\\"ng-pristine ng-scope ng-invalid ng-invalid-required\\">
+                    <label>Name: </label>
+                    <input name=\\"fieldName\\" ng-model=\\"[ngExpression]\\" required=\\"\\" class=\\"ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required\\">
+                    <p ng-show=\\"[ngExpression]\\" class=\\"ng-hide\\">
+                        The name field is required.
+                    </p>
+                </form>"
+`;
+
 exports[`should render a template that doesn't contains AngularJS directives 1`] = `"<a class=\\"ng-scope\\">Serialize me!</a>"`;
 
 exports[`should replace the angular expressions on directives 1`] = `

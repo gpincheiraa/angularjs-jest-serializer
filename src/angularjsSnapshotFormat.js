@@ -21,9 +21,10 @@ const HTMLNormalizer = (element) => {
 
 export const angularjsSnapshotFormat = ({ template, $ctrl }) => {
     const scope = $rootScope.$new();
-    scope.$ctrl = $ctrl;
+    scope.$ctrl = angular.copy($ctrl);
 
     let el = $compile(template)(scope);
+    Object.assign(scope.$ctrl, $ctrl);
     scope.$digest();
 
     removeHTMLComments(el[0].childNodes);
