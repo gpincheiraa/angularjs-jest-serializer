@@ -10,7 +10,7 @@ exports[`should overwrite the FormController instance created by angularJS $comp
     function if the component definition set the given variable in the form name attribute 1`] = `
 "<form name=\\"$ctrl.formName\\" class=\\"ng-pristine ng-scope ng-invalid ng-invalid-required\\">
                     <label>Name: </label>
-                    <input name=\\"fieldName\\" ng-model=\\"[ngExpression]\\" required=\\"\\" class=\\"ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required\\">
+                    <input name=\\"fieldName\\" ng-model=\\"[ngExpression]\\" required=\\"\\" class=\\"ng-pristine ng-touched ng-empty ng-invalid ng-invalid-required\\">
                     <p ng-show=\\"[ngExpression]\\">
                         The name field is required.
                     </p>
